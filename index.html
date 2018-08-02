@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<video src="videoplayback.mp4" autoplay controls id="video">
+
+</video>
+<br>
+<button type="button" name="button" onclick="play()">play</button>
+<br>
+<br>
+<button type="button" name="button" onclick="pause()">pause</button>
+<hr>
+<h1>audio</h1>
+<audio src="dnc-2004-speech.mp3" id="audio" width="300px" autoplay controls>
+
+</audio >
+<br>
+<button type="button" name="button" onclick="play1()">play</button>
+<br>
+<br>
+<button type="button" name="button" onclick="pause1()">pause</button>
+
+  </body>
+</html>
+<script type="text/javascript">
+// video
+function play()
+{
+  var vid=document.getElementById("video");
+  vid.play();
+}
+function pause()
+{
+  var vid=document.getElementById("video");
+  vid.pause();
+}
+
+// Audio
+
+  function play1(){
+    var audio=document.getElementById("audio");
+    audio.play();
+  }
+  function pause1(){
+    var audio=document.getElementById("audio");
+    audio.pause();
+  }
+</script>
